@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: Sammy # Name of the service
+    env: docker
+    repo: https://github.com/SammyLifetime/Sammy
+    plan: free
+    branch: main
+    envVars:
+      - key: PORT
+        value: 3000
