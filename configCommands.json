@@ -1,0 +1,73 @@
+{
+  "commandBanned": {},
+  "envGlobal": {
+    "weatherApiKey": "d7e795ae6a0d44aaa8abb1a0a7ac19e4",
+    "goatbotApikey": ""
+  },
+  "envCommands": {
+    "daily": {
+      "rewardFirstDay": {
+        "coin": 100,
+        "exp": 10
+      }
+    },
+    "notification": {
+      "delayPerGroup": 250
+    },
+    "rank": {
+      "deltaNext": 5
+    },
+    "rankup": {
+      "deltaNext": 5
+    },
+    "appstore": {
+      "limitResult": 3
+    },
+    "botnick": {
+      "delayPerGroup": 250
+    },
+    "notification2": {
+      "delayPerGroup": 250
+    },
+    "quiz": {
+      "reward": 30000
+    },
+    "spellingbee": {
+      "reward": 30
+    },
+    "wanted2": {
+      "deltaNext": 5
+    },
+    "ads": {
+      "deltaNext": 5
+    },
+    "antiout": {
+      "deltaNext": 5
+    },
+    "dhbc": {
+      "reward": 1000
+    },
+    "gay": {
+      "deltaNext": 5
+    },
+    "math": {
+      "WOLFRAM": "T8J8YV-H265UQ762K"
+    },
+    "qr": {},
+    "trash": {
+      "deltaNext": 5
+    },
+    "blur": {
+      "deltaNext": 5
+    },
+    "cinfo": {}
+  },
+  "envEvents": {
+    "logsbot": {
+      "allow": true
+    }
+  },
+  "commandUnload": [
+    "0spy.js"
+  ]
+}

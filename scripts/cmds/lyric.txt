@@ -1,0 +1,30 @@
+const lyricsFinder = require('lyrics-finder');
+module.exports = {
+ config: {
+ name: "lyrics",
+ aliases: ["lyric", "ly"],
+ version: "1.0",
+ author: "rulex-al/loufi",
+ countDown: 5,
+ role: 0,
+ shortDescription: {
+ en: "Get lyrics for a song",
+ },
+ longDescription: {
+ en: "This command allows you to get the lyrics for a song. Usage: !lyrics <song name>",
+ },
+ category: "music",
+ guide: {
+ en: "{prefix}lyrics <song name>",
+ },
+ },
+
+ onStart: async function ({ api, event, args }) {
+ var artists = args.join(" "), titles = args.join(" ");
+    (async function(artist, title) {
+        let lyrics = await lyricsFinder(artist, title) || "Not Found!";
+        api.sendMessage(`${lyrics}`, event.threadID, event.messageID);
+    })(artists, titles);
+ },
+};
+                 
